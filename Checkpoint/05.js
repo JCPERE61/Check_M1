@@ -1,5 +1,7 @@
 // 5️⃣ ***** EJERCICIO 5 ***** - cobrarClientes 5️⃣
 
+const { Queue } = require("../DS");
+
 // Implementar la función cobrarClientes, que recibirá una
 // Queue (fila) de clientes que esperan para realizar el pago
 // de sus compras del supermercado.
@@ -58,6 +60,21 @@
 
 function cobrarClientes(clientes) {
   // Tu código aquí:
+
+  const sacados = new Queue();
+
+  for (let i=0;i<clientes.length;i++){
+
+  while (typeof (clientes[i]) === "object"){
+    if (clientes[i].dinero >= clientes[i].precioProductos){
+      sacados.enqueue(clientes[i].nombre)
+    } else {
+      return sacados;
+    }
+  }
+  }
+  return false;
+
  
 }
 

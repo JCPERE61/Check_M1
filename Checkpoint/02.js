@@ -28,7 +28,7 @@ const calcularIndice = (n) => {
   obj[0] = 15;
   obj[1] = 25;
   for (let i = 2;i<=n;i++){
-    obj[String(n)] = Number(obj[String(n-1)]) + Number(obj [String(n-2)]);
+    obj[n.toString] = Number(obj[(n-1).toString]) + Number(obj [(n-2).toString]);
   }
   return obj[n];
 }

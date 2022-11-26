@@ -22,6 +22,17 @@ const { BinarySearchTree } = require("../DS");
 BinarySearchTree.prototype.searchMax = function () {
   // Tu código aquí:
 
+  let maximo = this.value;
+  
+  if (this.right !=null)
+  if (this.right.value > maximo){
+    maximo = this.right.value;
+  }
+  return this.right.searchMax;
+  
+
+
+
 };
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {

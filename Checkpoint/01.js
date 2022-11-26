@@ -45,6 +45,18 @@ const { Queue } = require("../DS");
 function henryParking(arr) {
   // Tu código aquí:
 
+  var arreglo = new Queue;
+    
+  for (i=0; i<arr.length;i++){
+    if(arreglo[0] = "OUT") return false;
+    if (arreglo[i]="OUT"){
+      arreglo.dequeue;
+    } else {
+      arreglo.enqueue(arr[i]);
+    }
+  }
+  return arreglo;
+
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

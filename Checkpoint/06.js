@@ -63,6 +63,33 @@ const { BinarySearchTree } = require("../DS");
 BinarySearchTree.prototype.agregarProductos = function (nombreProducto, productos) {
   // Tu código aquí:
 
+  var arbolDeProductos = new BinarySearchTree ("Leche")
+
+  for (prop in productos){
+    
+  if (productos[nombreProducto]< productos[this.value]) {
+    if(this.left === null){
+      var newProducto = new BinarySearchTree(nombreProducto);
+      this.left = newProducto;
+    } else {
+      this.left.agregarProductos(productos[nombreProducto])
+    }
+  }else {
+    if(this.right === null){
+      var newProducto = new BinarySearchTree(nombreProducto);
+      this.right = newProducto;
+    } else {
+      this.right.agregarProductos(productos[nombreProducto])
+    }
+
+  }
+
+}
+
+  
+
+  
+
 };
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

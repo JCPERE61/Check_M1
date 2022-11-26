@@ -31,6 +31,31 @@ const { BinarySearchTree } = require("../DS");
 BinarySearchTree.prototype.searchPrice = function (precio) {
     // Tu código aquí
 
+    var arbolDePrecios = this.value;
+
+    if (precio === this.value) return true;
+    if (precio <= 0) return "Error";
+
+
+
+    if (precio > arbolDePrecios.value){
+        while (arbolDePrecios.right !==null){
+            if (precio === arbolDePrecios.left.value || precio === arbolDePrecios.right.value){
+            return true;}
+            arbolDePrecios.right = arbolDePrecios.right.right;
+        }
+        
+    } else
+    if (precio < arbolDePrecios.value){
+        while (arbolDePrecios.left !==null){
+            if (precio === arbolDePrecios.left.value || precio === arbolDePrecios.right.value){
+            return true;}
+            arbolDePrecios.left = arbolDePrecios.left.left;
+        } 
+        
+    } else 
+    return false;
+
 };
 
 

@@ -23,6 +23,14 @@
 const calcularIndice = (n) => {
   // Tu código aquí:
 
+  let obj = {};
+  if (n<0) return false;
+  obj[0] = 15;
+  obj[1] = 25;
+  for (let i = 2;i<=n;i++){
+    obj[String(n)] = Number(obj[String(n-1)]) + Number(obj [String(n-2)]);
+  }
+  return obj[n];
 }
 
 

@@ -30,6 +30,19 @@
 function devuelveMayores(lista, valor) {
   // Tu código aquí:
 
+  var current = lista.head;
+  var cuenta = 0;
+
+  while (current !== null){
+    if(current.value > valor) {
+      cuenta = cuenta +1;
+    }
+    current = current.next;
+  }
+  if (cuenta === 0) return "Sin precios";
+
+  return cuenta;
+
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

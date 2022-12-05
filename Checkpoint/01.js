@@ -42,6 +42,10 @@ const { Queue } = require("../DS");
 //    debe retornar false
 //  🟢 ATENCIÓN! La QUEUE que retorna la función debe ser una instancia de la clase QUEUE.
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 function henryParking(arr) {
   // Tu código aquí:
 

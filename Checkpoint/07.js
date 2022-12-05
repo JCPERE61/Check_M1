@@ -14,6 +14,10 @@
 //  🟢 Caso contrario, debe retornar un array con los precios ordenados, utilizando alguno de los método de ordenamiento
 //    estudiados. NO SE PUEDE USAR EL MÉTODO SORT() DE ARRAY.
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 function ordenarPrecios(arr) {
     // Tu código aquí:
 

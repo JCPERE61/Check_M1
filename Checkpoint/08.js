@@ -19,6 +19,10 @@ const { BinarySearchTree } = require("../DS");
 //
 // Deberá retornar 45.
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 BinarySearchTree.prototype.searchMax = function () {
   // Tu código aquí:
 

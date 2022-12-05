@@ -28,6 +28,11 @@ const { BinarySearchTree } = require("../DS");
 // arbolDePrecios.searchPrice(0) => "Error"
 // arbolDePrecios.searchPrice(-10) => "Error"
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
+
 BinarySearchTree.prototype.searchPrice = function (precio) {
     // Tu código aquí
 

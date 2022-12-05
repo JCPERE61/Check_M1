@@ -20,6 +20,11 @@
 //  🟢 La función debe retornar el valor numérico correspondiente a n dentro de la secuencia.
 //  🟢 Si el valor de n recibido por parámetro es menor a 0, debe retornar false.
 
+
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 const calcularIndice = (n) => {
   // Tu código aquí:
 

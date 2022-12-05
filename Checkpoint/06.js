@@ -60,6 +60,10 @@ const { BinarySearchTree } = require("../DS");
 //    precio del producto. (Ver ejemplos)
 //  🟢 En caso de insertar el producto correctamente, debe retornar el nuevo nodo que ha sido insertado.
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 BinarySearchTree.prototype.agregarProductos = function (nombreProducto, productos) {
   // Tu código aquí:
 

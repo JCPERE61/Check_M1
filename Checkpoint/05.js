@@ -58,6 +58,10 @@ const { Queue } = require("../DS");
 //    han abonado correctamente.
 //  🟢 En caso de quedarse sin clientes en la fila, la función debe retornar false.
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 function cobrarClientes(clientes) {
   // Tu código aquí:
 

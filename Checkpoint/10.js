@@ -17,6 +17,10 @@
 //  const ingresosHorario =  ingresoEmpleado(9)
 //  Si ejecuto ingresosHorario(empleados) me daria de resultado ["Jorge"]
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 function ingresoEmpleado(horario) {
 // Tu código aquí:
 

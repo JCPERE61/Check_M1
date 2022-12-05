@@ -27,6 +27,10 @@
 //
 //  ATENCIÓN! Las respuestas en strings son case sensitive!
 
+// 1.- Qué nos llega?
+// 2.- Qué se debe hacer?
+// 3.- Cómo proceder?
+
 function devuelveMayores(lista, valor) {
   // Tu código aquí:
 

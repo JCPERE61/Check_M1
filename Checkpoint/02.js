@@ -21,21 +21,19 @@
 //  🟢 Si el valor de n recibido por parámetro es menor a 0, debe retornar false.
 
 
-// 1.- Qué nos llega?
-// 2.- Qué se debe hacer?
+// 1.- Qué nos llega? Un número que representa el año de actividad
+// 2.- Qué se debe hacer? Calcular de acuerdo al año que se indique el indice 
+//     que se obtiene sumando los indices de los dos años inmediato anteriores.
 // 3.- Cómo proceder?
 
 const calcularIndice = (n) => {
   // Tu código aquí:
 
-  let obj = {};
-  if (n<0) return false;
-  obj[0] = 15;
-  obj[1] = 25;
-  for (let i = 2;i<=n;i++){
-    obj[n.toString] = Number(obj[(n-1).toString]) + Number(obj [(n-2).toString]);
-  }
-  return obj[n];
+  if (n<0) return false;        // Si n es negativo devolver falso;
+  if (n === 0) return 15;       // Se conoce que el año 0 el indice es 15
+  if (n === 1) return 25;       // Se conoce que el año 1 el indice es 25
+
+  return calcularIndice(n-1)+calcularIndice(n-2);
 }
 
 

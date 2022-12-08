@@ -17,8 +17,8 @@
 //  const ingresosHorario =  ingresoEmpleado(9)
 //  Si ejecuto ingresosHorario(empleados) me daria de resultado ["Jorge"]
 
-// 1.- Qué nos llega?
-// 2.- Qué se debe hacer?
+// 1.- Qué nos llega? Un arreglo de objetos on la información del nombre y la hora de ingreso
+// 2.- Qué se debe hacer? Crear una función que al dar una hora devuelva los empleados que ingresron antes del horario de ingresow4
 // 3.- Cómo proceder?
 
 function ingresoEmpleado(horario) {
@@ -28,13 +28,12 @@ let arr = [];
 
 return function ingresoHorario(empleados){
     for (let i=0;i<empleados.length;i++){
-        if (horario < empleados[i].ingresoA){
-            arr.push(empleados[i].nombre);
+        if (horario > empleados[i]['ingresoA']){
+            arr.push(empleados[i]['nombre']);
         }
 }
 return arr;
 }
-
 
 }
 

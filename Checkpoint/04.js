@@ -27,8 +27,10 @@
 //
 //  ATENCIÓN! Las respuestas en strings son case sensitive!
 
-// 1.- Qué nos llega?
-// 2.- Qué se debe hacer?
+// 1.- Qué nos llega? Una lista enlazada con precios de productos 
+// 2.- Qué se debe hacer? Recorrer la lista y devolver la cantidad de precios
+//     que superen el valor del precio maximo que se quiere evaluar. Si ningún precio
+//     supera el valor se debe devolver "Sin precios
 // 3.- Cómo proceder?
 
 function devuelveMayores(lista, valor) {
@@ -37,15 +39,17 @@ function devuelveMayores(lista, valor) {
   var current = lista.head;
   var cuenta = 0;
 
-  while (current !== null){
-    if(current.value > valor) {
+  while (current !== null){               // Se recorre la lista empezando por el "head"
+    if(current.value > valor) {           // y se añaden os productos cuyo valor es
+                                          // superior al pasado en la función
       cuenta = cuenta +1;
     }
     current = current.next;
   }
-  if (cuenta === 0) return "Sin precios";
+  if (cuenta === 0) return "Sin precios"; // Si ninguno es mayor se devuelve "Sin precios"
 
-  return cuenta;
+  return cuenta;                          // Sino se devuelve la información de cuantos
+                                          // han superado el precio
 
 }
 

@@ -42,24 +42,28 @@ const { Queue } = require("../DS");
 //    debe retornar false
 //  🟢 ATENCIÓN! La QUEUE que retorna la función debe ser una instancia de la clase QUEUE.
 
-// 1.- Qué nos llega?
-// 2.- Qué se debe hacer?
+// 1.- Qué nos llega? Un arreglo que representa el orden de entradas y salidas de vehículos
+// 2.- Qué se debe hacer? Una Queue en que se registren los ingresos y egresos
 // 3.- Cómo proceder?
 
 function henryParking(arr) {
   // Tu código aquí:
 
-  var arreglo = new Queue;
+  var arreglo = new Queue();
+
+  if(arr[0] === "OUT") return false;        // Si el primer elemento del Queue es un "OUT" devolver falso
     
-  for (i=0; i<arr.length;i++){
-    if(arr[0] = "OUT") return false;
-    if (arr[i]="OUT"){
-      arreglo.dequeue();
-    } else {
+  for (i=0; i<arr.length;i++){             // Recorrer el arreglo recibido  
+    if (arr[i] === "OUT"){                      // Si algún elemento (que no es el primero) es "OUT" 
+      arreglo.dequeue();                    // Elimina el primer elemento de la Queue
+    } else {                                // Si no aumenta un elemento a la Queue
       arreglo.enqueue(arr[i]);
     }
   }
-  return arreglo;
+  if (arreglo.array.length > 0){
+    return arreglo;                         // Si tiene algún elemento, devolver el Queue arreglo
+  } else {return false;}                    // Si se vació, devolver falso
+                             
 
 }
 

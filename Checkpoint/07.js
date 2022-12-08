@@ -14,15 +14,15 @@
 //  🟢 Caso contrario, debe retornar un array con los precios ordenados, utilizando alguno de los método de ordenamiento
 //    estudiados. NO SE PUEDE USAR EL MÉTODO SORT() DE ARRAY.
 
-// 1.- Qué nos llega?
-// 2.- Qué se debe hacer?
+// 1.- Qué nos llega? Un arreglo con lista desordenada de precios 
+// 2.- Qué se debe hacer? A través de los métodos de ordenamiento retornar un arreglo con precios ordenados de menor a mayor
 // 3.- Cómo proceder?
 
 function ordenarPrecios(arr) {
     // Tu código aquí:
 
-    var flag = true;
-    while (flag) {
+    var flag = true;                    // Resolver mediante el método de BubbleSort tomando el arreglo entregado y ordenando
+    while (flag) {                      // sus elementos
       flag = false;
       for (let i=0; i< arr.length;i++){
         if (arr[i] === 0) return false;

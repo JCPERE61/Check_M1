@@ -54,25 +54,28 @@ const { Stack } = require("../DS");
 //
 // ATENCIÓN! Las respuestas en strings son case sensitive!
 //
-// 1.- Qué nos llega?
-// 2.- Qué se debe hacer?
+// 1.- Qué nos llega? Un arreglo que representa las cajas que se desean apilar con
+//     el nombre del producto y el peso total de cada caja.
+// 2.- Qué se debe hacer? Retornar un stack con los nombres de los productos que se 
+//     vayan apilando sin superar el peso máximo permitido. En caso que superen debe
+//     devolver "No se puede crear la pila" y para un arreglo vacio devolver "Error"
 // 3.- Cómo proceder?
 
 
 function apilarCajas(arr) {
   // Tu código aquí
 
-  if(arr.length === 0) return "Error";
-  var cajas = new Stack();
+  if(arr.length === 0) return "Error";    // Para un arreglo vacio se devuelve "Error"
+  var cajas = new Stack();                // Si no se crea una instancia de Stack para colocar listado de productos
 
-  let pesototal = 0;
-  for (i=0; i<arr.length;i++){
+  let pesototal = 0;                      // Inicializar el total del peso
+  for (i=0; i<arr.length;i++){            // Recorrer el arreglo, adicionandop el peso del producto indicado
     pesototal = pesototal + arr[i].peso;
-    cajas.push(arr[i].nombre);
+    cajas.push(arr[i].nombre);            // Ingresar al stack el producto indicado
   }
-  if (pesototal > 50) {
-    return "No se puede crear la pila";
-  } else {
+  if (pesototal > 50) {                   // Si al finalizar el peso total excede 50kg
+    return "No se puede crear la pila";   // Devolver "No se puede crear la pila"
+  } else {                                // Sino devolver la pila (Stack) creada
     return cajas
   }
 
